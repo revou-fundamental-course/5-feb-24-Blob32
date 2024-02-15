@@ -23,7 +23,7 @@
     <!-- isi dari content yang disajikan berupa penjelasan singkat mengenai Suhu, Satuan Celsius dan Farenheit serta alat konversi suhu juga rumusnya -->
         <div id="suhu" class="card">
             <!-- penjelasan mengenai suhu -->
-            <h2 id="subtitle">Apa itu suhu</h2>
+            <h2 id="subtitle">Apa itu suhu?</h2>
             <p>
                 Suhu adalah ukuran kuantitatif terhadap temperatur, panas dan dingin, yang diukur dengan termometer⁴. 
                 Dalam fisika, suhu didefinisikan sebagai besaran skalar yang mengukur energi internal suatu benda. 
@@ -34,32 +34,37 @@
                 Ada empat jenis skala suhu yang paling dikenal, yaitu Celcius, Fahrenheit, Reaumur, dan Kelvin².
             </p>
         </div>
+        <hr>
         <div id="satuan" class="card">
             <!-- penjelasan mengenai celsius dan farenheit -->
             <h2 id="subtitle">Celsius & Fahrenheit</h2>
-            <p>Celsius dan Fahrenheit adalah dua skala yang digunakan untuk mengukur suhu.</p>
-            <p><strong>Celsius</strong> adalah skala suhu yang paling umum digunakan di dunia. Dalam skala ini, titik beku air ditetapkan pada 0 derajat dan titik didih air pada 100 derajat pada tekanan atmosfer standar</p>
-            <p><strong>Fahrenheit</strong> adalah skala suhu yang terutama digunakan di Amerika Serikat. Dalam skala ini, titik beku air ditetapkan pada 32 derajat dan titik didih air pada 212 derajat pada tekanan atmosfer standar</p>
+            <p>
+                Celsius dan Fahrenheit adalah dua skala yang digunakan untuk mengukur suhu.<br>
+                <strong>Celsius</strong> adalah skala suhu yang paling umum digunakan di dunia. Dalam skala ini, titik beku air ditetapkan pada 0 derajat dan titik didih air pada 100 derajat pada tekanan atmosfer standar. Sedangkan 
+                <strong>Fahrenheit</strong> adalah skala suhu yang terutama digunakan di Amerika Serikat. Dalam skala ini, titik beku air ditetapkan pada 32 derajat dan titik didih air pada 212 derajat pada tekanan atmosfer standar.
+            </p>
         </div>
+        <hr>
         <div id="convert" class="card">
-            <form id="formSuhu">
-                <fieldset>
-                    <legend>Konversi Suhu</legend>
-                    <label for="inputCelsius">Celsius</label>
-                    <input id="inputCelsius" type="number" placeholder="Masukkan suhu Celsius...">
-                    <label for="inputFahrenheit">Fahrenheit</label>
-                    <input id="inputFahrenheit" type="number" placeholder="Hasil konversi..." disabled>
-                    <hr>
-                    <label for="caraKalkulasi">Cara Kalkulasi</label>
-                    <input id="caraKalkulasi" type="text" placeholder="Rumus suhu..." readonly>
-                </fieldset>
+            <h2>Konversi Suhu</h2>
+            <p>Masukkan suhu derajat Celsius (°C) ke kotak dibawah, lalu klik tombol Konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (°F).</p>
+            <label for="inputCelsius">Celsius</label><br>
+            <input class="area" id="inputCelsius" type="number" placeholder="Masukkan suhu Celsius..."><br>
+            <label for="inputFahrenheit">Fahrenheit</label><br>
+            <input class="area" id="inputFahrenheit" type="number" placeholder="Hasil konversi..." disabled>
+            <hr>
+            <label for="caraKalkulasi">Cara Kalkulasi</label><br>
+            <input class="area" id="caraKalkulasi" type="text" placeholder="Rumus suhu..." readonly>
+            <div class="myButton">
                 <button id="btnKonvert" type="button">Konvert</button>
                 <button id="btnReset" type="button">Reset</button>
-                <button id="btnReverse" type="button">Reverse</button>
-            </form>
+                <button id="btnReverse" type="button">Reverse</button>                
+            </div>
+
         </div>
+        <hr>
         <div id="rumus" class="card">
-            <h3>Cara Konversi Dari Celsius (<sup>o</sup>C) ke Farenheit (<sup>o</sup>F)</h3>
+            <h2>Cara Konversi Dari Celsius (°C) ke Farenheit (°F)</h2>
             <img src="asset/rumus.png" alt="rumus" width="200px">
         </div>
     </main>
