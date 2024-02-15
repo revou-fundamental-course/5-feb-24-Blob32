@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>converter Suhu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- navigasi menu -->
+    <header id="navigationBar">
+        <h3 id="title">Konversi Suhu</h3>
+        <nav id="navigation">
+            <ul>
+                <li><a href="#suhu">Suhu</a></li>
+                <li><a href="#satuan">Satuan</a></li>
+                <li><a href="#convert">Convert</a></li>
+                <li><a href="#rumus">Rumus</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <!-- isi dari content yang disajikan berupa penjelasan singkat mengenai Suhu, Satuan Celsius dan Farenheit serta alat konversi suhu juga rumusnya -->
+        <div id="suhu" class="card">
+            <!-- penjelasan mengenai suhu -->
+            <h2 id="subtitle">Apa itu suhu</h2>
+            <p>
+                Suhu adalah ukuran kuantitatif terhadap temperatur, panas dan dingin, yang diukur dengan termometer⁴. 
+                Dalam fisika, suhu didefinisikan sebagai besaran skalar yang mengukur energi internal suatu benda. 
+                Lebih tepatnya, suhu suatu benda menunjukkan momentum partikelnya⁵. 
+                Jadi, semakin tinggi suhu suatu sistem, semakin banyak partikelnya yang bergetar⁵.
+                Suhu juga dapat dinyatakan dalam beberapa skala sembarang dan menunjukkan arah di mana energi panas 
+                akan mengalir secara spontan (energi mengalir dari benda yang bersuhu tinggi ke benda bersuhu rendah)³. 
+                Ada empat jenis skala suhu yang paling dikenal, yaitu Celcius, Fahrenheit, Reaumur, dan Kelvin².
+            </p>
+        </div>
+        <div id="satuan" class="card">
+            <!-- penjelasan mengenai celsius dan farenheit -->
+            <h2 id="subtitle">Celsius & Fahrenheit</h2>
+            <p>Celsius dan Fahrenheit adalah dua skala yang digunakan untuk mengukur suhu.</p>
+            <p><strong>Celsius</strong> adalah skala suhu yang paling umum digunakan di dunia. Dalam skala ini, titik beku air ditetapkan pada 0 derajat dan titik didih air pada 100 derajat pada tekanan atmosfer standar</p>
+            <p><strong>Fahrenheit</strong> adalah skala suhu yang terutama digunakan di Amerika Serikat. Dalam skala ini, titik beku air ditetapkan pada 32 derajat dan titik didih air pada 212 derajat pada tekanan atmosfer standar</p>
+        </div>
+        <div id="convert" class="card">
+            <form id="formSuhu">
+                <fieldset>
+                    <legend>Konversi Suhu</legend>
+                    <label for="inputCelsius">Celsius</label>
+                    <input id="inputCelsius" type="number" placeholder="Masukkan suhu Celsius...">
+                    <label for="inputFahrenheit">Fahrenheit</label>
+                    <input id="inputFahrenheit" type="number" placeholder="Hasil konversi..." disabled>
+                    <hr>
+                    <label for="caraKalkulasi">Cara Kalkulasi</label>
+                    <input id="caraKalkulasi" type="text" placeholder="Rumus suhu..." readonly>
+                </fieldset>
+                <button id="btnKonvert" type="button">Konvert</button>
+                <button id="btnReset" type="button">Reset</button>
+                <button id="btnReverse" type="button">Reverse</button>
+            </form>
+        </div>
+        <div id="rumus" class="card">
+            <h3>Cara Konversi Dari Celsius (<sup>o</sup>C) ke Farenheit (<sup>o</sup>F)</h3>
+            <img src="asset/rumus.png" alt="rumus" width="200px">
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

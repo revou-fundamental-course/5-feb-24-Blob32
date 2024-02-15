@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Roboto:wght@300;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #000;
+}
+body::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
+}
+body {
+    background-color: #F6F1F1;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+#navigationBar{
+    position: sticky;
+    top: 0;
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #19A7CE;
+}
+#navigationBar #title{
+    font-family: 'League Spartan', sans-serif;
+    font-size: 2em;
+    /* font-weight: bold; */
+    letter-spacing: 1px;
+}
+#navigation{width: 35%;}
+#navigation ul{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+#navigation li {
+    list-style-type: none;
+    font-size: 20px;
+    margin: 0 5px;
+}
+#navigation a{
+    padding: 0 0 2px 0;
+    margin: 5px 10px;
+    border-radius: 15px;
+    transition: 0.2s ease;
+    letter-spacing: 1px;
+    color: #0066ff;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+#navigation a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #F6F1F1;
+    transition: transform 200ms ease-in-out;
+    transform: scale(0);
+}
+#navigation a:hover::before,
+#navigation a:focus:before{
+  transform: scale(1);
+}
+#navigation a:hover{color: #F6F1F1;}
+
+main{
+    padding: 10px;
+}
+.card{
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 12px;
+}
+.card h2{
+    color: #0066ff;
+}
+
+
+
+/* reponsife web */
+@media only screen and (max-width: 768px){}
+@media only screen and (min-width: 600px){}
